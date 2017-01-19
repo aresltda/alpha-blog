@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:edit, :update, :show, :destroy]
+  before_action :set_article, only: [:edit, :update, :show, :destroy] #esto es para llamar el metodo set_article antes de que inicie accion
+  #y lo llama solo para esos metodos
 
   def index
     @articles = Article.all
